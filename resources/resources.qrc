@@ -1,0 +1,17 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/aetherhud">
+        <!-- Styles -->
+        <file>styles/error-page.css</file>
+        <file>styles/loading.css</file>
+        
+        <!-- Images -->
+        <file>images/aetherhud-logo.svg</file>
+        <file>images/loading-crystal.svg</file>
+        
+        <!-- Fonts -->
+        <file>fonts/LICENSE.txt</file>
+        <file>fonts/Cinzel-Regular.ttf</file>
+        <file>fonts/Cinzel-Bold.ttf</file>
+    </qresource>
+</RCC>

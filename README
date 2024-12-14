@@ -1,0 +1,90 @@
+# AetherHUD
+
+A Final Fantasy XIV overlay system built with Qt WebEngine, designed to provide seamless integration with the game's aesthetic and functionality.
+
+## Features
+
+- Click-through overlay windows that match FFXIV's UI style
+- Per-job layout saving and restoration
+- Hotkey support for visibility and window locking
+- FFXIV-styled error pages and loading indicators
+- Transparent background support
+- Low-impact performance design
+
+## Requirements
+
+- Qt 6.x (or Qt 5.15+)
+- CMake 3.16+
+- C++17 compatible compiler
+- WebEngine support
+
+## Building
+
+### Linux
+```bash
+mkdir build && cd build
+cmake ..
+make
+```
+
+### Windows with MSVC
+```bash
+mkdir build && cd build
+cmake -G "Visual Studio 17 2022" ..
+cmake --build . --config Release
+```
+
+### macOS
+```bash
+mkdir build && cd build
+cmake ..
+make
+```
+
+## Usage
+
+### Basic Usage
+```bash
+./aetherhud [URL]
+```
+
+### Default Hotkeys
+- **Ctrl+Shift+H**: Toggle overlay visibility
+- **Ctrl+Shift+L**: Toggle window lock
+
+## Development
+
+### Project Structure
+```
+aetherhud/
+├── src/
+│   └── main.cpp
+├── include/
+│   └── version.h
+├── resources/
+│   ├── styles/
+│   ├── images/
+│   └── fonts/
+├── CMakeLists.txt
+└── README.md
+```
+
+### Building Documentation
+Documentation can be built using Doxygen:
+```bash
+doxygen Doxyfile
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Acknowledgments
+
+- The FFXIV community for inspiration
+- Qt team for their excellent framework
+- All contributors who help improve AetherHUD

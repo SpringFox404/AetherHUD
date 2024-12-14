@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- Aetheric crystal base -->
+    <defs>
+        <linearGradient id="crystal-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffce54;stop-opacity:0.9"/>
+            <stop offset="100%" style="stop-color:#ffce54;stop-opacity:0.3"/>
+        </linearGradient>
+        <filter id="crystal-glow">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+    </defs>
+    
+    <!-- Background aetheric circle -->
+    <circle cx="50" cy="50" r="45" 
+            fill="none" 
+            stroke="url(#crystal-gradient)" 
+            stroke-width="2"
+            opacity="0.3"/>
+    
+    <!-- Crystal shape -->
+    <path d="M50 10 L80 40 L80 60 L50 90 L20 60 L20 40 Z" 
+          fill="url(#crystal-gradient)"
+          stroke="#ffce54"
+          stroke-width="1"
+          opacity="0.8"/>
+    
+    <!-- Inner details -->
+    <path d="M50 20 L70 45 L50 70 L30 45 Z" 
+          fill="#ffce54"
+          opacity="0.6"/>
+    
+    <!-- Glowing center -->
+    <circle cx="50" cy="50" r="5" 
+            fill="#ffce54"
+            filter="url(#crystal-glow)"
+            opacity="0.9"/>
+</svg>

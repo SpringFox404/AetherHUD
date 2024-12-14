@@ -1,0 +1,71 @@
+/* FFXIV-inspired error page styling */
+@font-face {
+    font-family: 'Cinzel';
+    src: url(':/aetherhud/fonts/Cinzel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(':/aetherhud/fonts/Cinzel-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.aetherhud-error {
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(255, 206, 84, 0.3);
+    box-shadow: 
+        0 0 15px rgba(255, 206, 84, 0.2),
+        inset 0 0 30px rgba(255, 206, 84, 0.1);
+    font-family: 'Cinzel', serif;
+    color: #ffce54;
+    padding: 2rem;
+    position: relative;
+}
+
+.aetherhud-error::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 206, 84, 0.5),
+        transparent
+    );
+}
+
+.aetherhud-error h1 {
+    color: #ffce54;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 
+        0 0 10px rgba(255, 206, 84, 0.5),
+        0 0 20px rgba(255, 206, 84, 0.3);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.aetherhud-error .message {
+    color: #e6e6e6;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 3px solid #ffce54;
+}
+
+.aetherhud-error .details {
+    color: #8b8b8b;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
